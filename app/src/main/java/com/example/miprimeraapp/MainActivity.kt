@@ -60,7 +60,7 @@ fun CertificatingCourse(nombre:String, modifier: Modifier = Modifier){
             modifier = modifier.fillMaxWidth(),
               alpha = 0.2F,
               //modifier = modifier.size(50.dp,50.dp)
-          )
+          )//hh
           Image(
               painter =
               painterResource(id = R.drawable.escudo2),
