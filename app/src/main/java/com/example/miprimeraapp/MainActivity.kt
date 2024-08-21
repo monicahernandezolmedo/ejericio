@@ -55,12 +55,36 @@ fun CertificatingCourse(nombre:String, modifier: Modifier = Modifier){
       ) {
           Image(
               painter =
-              painterResource(id = R.drawable.android_logo),
+              painterResource(id = R.drawable.escud0),
+              contentDescription = null,
+            modifier = modifier.fillMaxWidth(),
+              alpha = 0.2F,
+              //modifier = modifier.size(50.dp,50.dp)
+          )
+          Image(
+              painter =
+              painterResource(id = R.drawable.escudo2),
               contentDescription = null,
               modifier = modifier.fillMaxWidth(),
-              alpha = 0.2F
+              alpha = 0.2F,
+              //modifier = modifier.size(50.dp)
+          )
+          Image(
+              painter =
+              painterResource(id = R.drawable.magia),
+              contentDescription = null,
+              modifier = modifier.fillMaxWidth(),
+              alpha = 0.2F,
+              //modifier = modifier.size(50.dp)
           )
 
+          Text(
+              text = "$nombre",
+              fontSize = 25.sp,
+              fontWeight = FontWeight.Bold,
+              textAlign = TextAlign.Center,
+              modifier = modifier.fillMaxWidth()
+          )
           Text(
               text = "$nombre",
               fontSize = 25.sp,
@@ -82,5 +106,5 @@ fun CertificatingCourse(nombre:String, modifier: Modifier = Modifier){
 @Preview(showBackground = true)
 fun CertificatingCoursePreview(){
     
-    CertificatingCourse(nombre = "Jorge Armando Rodríguez Vera")
+    CertificatingCourse(nombre = "Mónica Andrea Hernández Olmedo")
 }
